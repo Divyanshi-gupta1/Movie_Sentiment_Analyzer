@@ -31,18 +31,4 @@ It uses machine learning algorithms and Python libraries such as **pandas**, **n
 ---
 
 ## How to Run the Project
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/username/movies-sentiment-analyzer.git
-
-2. Navigate into the project folder
-    ```bash
-    cd movies-sentiment-analyzer
-
-3. Install the dependencies
-    ```bash
-    pip install -r requirements.txt
-
-4. Run the script
-    ```bash
-    python sentiment_analyzer.py
+   ...coming soon
