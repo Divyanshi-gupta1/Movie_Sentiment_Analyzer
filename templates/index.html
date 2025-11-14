@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Movie Sentiment Analyzer</title>
+    <style>
+        body {
+            font-family: Arial;
+            background: #ffffff;
+            padding: 80px;
+            padding-left: 400px;
+        }
+
+        .box {
+            margin: 50px;
+            margin-left: 50px;
+            background: rgb(212, 212, 212);
+            padding: 25px;
+            width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #ffffff;
+        }
+
+        textarea {
+            width: 95%;
+            height: 120px;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 8px;
+            background-color: rgb(203, 203, 203);
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 15px;
+            text-align: center;
+            margin-left: 160px;
+            border-radius: 8px;
+            gap: 20px;
+        }
+
+        .result {
+            font-size: 20px;
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: center;
+            gap: 30px;
+        }
+
+        .bg {
+            background-image: url('static/image1.jpeg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body class="bg">
+
+    <div class="box">
+        <h2>Movie Review Sentiment Analyzer</h2>
+
+        <form method="POST">
+            <textarea name="review" placeholder="Write a movie review..."></textarea>
+            <br>
+            <button type="submit">Analyze Sentiment</button>
+        </form>
+
+        {% if sentiment %}
+        <div class="result">
+            Sentiment: {{ sentiment }}
+        </div>
+        {% endif %}
+    </div>
+
+</body>
+
+</html>
