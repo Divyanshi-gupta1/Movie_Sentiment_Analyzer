@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression
 
 app = Flask(__name__)
 
-df = pd.read_csv("IMDB Dataset.csv.zip", compression="zip")
+df = pd.read_csv("IMDB_small.csv")
 df = df[['review', 'sentiment']]
 
 X = df['review']
@@ -36,4 +36,5 @@ def index():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
 
