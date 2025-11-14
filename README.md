@@ -31,4 +31,5 @@ It uses machine learning algorithms and Python libraries such as **pandas**, **n
 ---
 
 ## How to Run the Project
-   ...coming soon
+   In Terminal run :
+      python movie_sentiments.py
